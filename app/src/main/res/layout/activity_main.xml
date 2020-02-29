@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:text="@string/english"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_eng001"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:id="@+id/tv_eng_001"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="ENG001"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="Elementary English"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_eng_101"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_eng_101"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/eng101"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/english_comprehension"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/eng201"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/business_and_technical_english_writing"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/eng301"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/business_communication"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/eng501"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/history_of_english_language"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:text="@string/computer_science_information_technology"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/cs101"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/introduction_to_computing"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/cs201"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/introduction_to_programming"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/cs301"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/data_structures"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/cs302"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/digital_logic_design"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/cs304"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/object_oriented_programming"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:text="@string/mathematics"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mth001"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/elementary_mathematics"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mth101"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/calculus_and_analytical_geometry"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mth202"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/discrete_mathematics"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mth301"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/calculus_ii"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mth401"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/differential_equations"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:text="@string/accounting"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mgt101"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/financial_accounting"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mgt201"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/financial_management"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mgt301"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/principles_of_marketing"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mgt501"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/human_resource_management"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="2dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="bottom|center"
+                                    android:text="@string/mgt211"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp"
+                                    android:background="@color/colorPrimary"
+                                    android:gravity="top|center"
+                                    android:text="@string/introduction_to_business"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>
