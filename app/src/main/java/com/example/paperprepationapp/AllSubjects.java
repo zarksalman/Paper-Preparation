@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.paperprepationapp.databinding.ActivityAllSubjectsBinding;
+import com.google.firebase.database.DatabaseReference;
 
 import static com.example.paperprepationapp.AppConstants.ACCOUNTING;
 import static com.example.paperprepationapp.AppConstants.CS;
@@ -21,6 +22,7 @@ public class AllSubjects extends Activity implements View.OnClickListener {
 
     // create variable for "activitylayoutBinding"
     private ActivityAllSubjectsBinding activityAllSubjectsBinding;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

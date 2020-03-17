@@ -42,6 +42,11 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         activityMainMcqsBinding = DataBindingUtil.setContentView(this, R.layout.activity_main_mcqs);
+        reverseTimer(60,activityMainMcqsBinding.tvTimer);
+        setListener();
+        updateQuestions();
+
+
 
     }
 
@@ -54,13 +59,13 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
         activityMainMcqsBinding.btnNext.setOnClickListener(this);
         activityMainMcqsBinding.btnPrevious.setOnClickListener(this);
         activityMainMcqsBinding.tvQuestionNo.setOnClickListener(this);
-        activityMainMcqsBinding.tvTimer.setOnClickListener(this);
+        //activityMainMcqsBinding.tvTimer.setOnClickListener(this);
     }
 
     public void updateQuestions() {
-        cCount++;
+            cCount++;
         if (cCount > 5) {
-            Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Finished", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, ResultActivity.class);
             intent.putExtra("total", String.valueOf(total));
             intent.putExtra("correct", String.valueOf(correct));
@@ -79,45 +84,26 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
                     activityMainMcqsBinding.tvMcqsOption2.setText(questions.getOption2());
                     activityMainMcqsBinding.tvMcqsOption3.setText(questions.getOption3());
                     activityMainMcqsBinding.tvMcqsOption4.setText(questions.getOption4());
-
-
-                /*    activityMainMcqsBinding.tvMcqsQuestion.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            if (activityMainMcqsBinding.tvMcqsQuestion.getText().toString().equals(questions.getAnswer()));
-                        }
-                    });*/
-
+                    setListener();
                 }
 
                 @Override
                 public void onCancelled(@NonNull DatabaseError databaseError) {
-
                 }
             });
 
         }
-
-
     }
 
     @Override
     public void onClick(View v) {
-        updateQuestions();
+
         if (v.getId() == R.id.tv_mcqs_option_1) {
+
             if (activityMainMcqsBinding.tvMcqsOption1.getText().toString().equals(questions.getAnswer())) {
                 Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_SHORT).show();
                 activityMainMcqsBinding.tvMcqsOption1.setBackgroundColor(Color.GREEN);
                 correct = correct + 1;
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        updateQuestions();
-                    }
-                }, 1500);
-
 
             } else {
                 Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
@@ -133,31 +119,14 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
                 } else if (activityMainMcqsBinding.tvMcqsOption4.getText().toString().equals(questions.getAnswer())) {
                     activityMainMcqsBinding.tvMcqsOption4.setBackgroundColor(Color.GREEN);
                 }
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        updateQuestions();
-                    }
-                }, 1500);
-
 
             }
 
-        } else if (v.getId() == R.id.cv_mcqs_option_2) {
+        } else if (v.getId() == R.id.tv_mcqs_option_2) {
             if (activityMainMcqsBinding.tvMcqsOption2.getText().toString().equals(questions.getAnswer())) {
                 Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_SHORT).show();
                 activityMainMcqsBinding.tvMcqsOption2.setBackgroundColor(Color.GREEN);
                 correct = correct + 1;
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        updateQuestions();
-                    }
-                }, 1500);
-
 
             } else {
                 Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
@@ -173,32 +142,14 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
                 } else if (activityMainMcqsBinding.tvMcqsOption4.getText().toString().equals(questions.getAnswer())) {
                     activityMainMcqsBinding.tvMcqsOption4.setBackgroundColor(Color.GREEN);
                 }
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        updateQuestions();
-                    }
-                }, 1500);
-
-
             }
 
 
-        } else if (v.getId() == R.id.cv_mcqs_option_3) {
+        } else if (v.getId() == R.id.tv_mcqs_option_3) {
             if (activityMainMcqsBinding.tvMcqsOption3.getText().toString().equals(questions.getAnswer())) {
                 Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_SHORT).show();
                 activityMainMcqsBinding.tvMcqsOption3.setBackgroundColor(Color.GREEN);
                 correct = correct + 1;
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        updateQuestions();
-                    }
-                }, 1500);
-
 
             } else {
                 Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
@@ -214,31 +165,13 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
                 } else if (activityMainMcqsBinding.tvMcqsOption4.getText().toString().equals(questions.getAnswer())) {
                     activityMainMcqsBinding.tvMcqsOption4.setBackgroundColor(Color.GREEN);
                 }
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        updateQuestions();
-                    }
-                }, 1500);
-
-
             }
 
-        } else if (v.getId() == R.id.cv_mcqs_option_4) {
+        } else if (v.getId() == R.id.tv_mcqs_option_4) {
             if (activityMainMcqsBinding.tvMcqsOption4.getText().toString().equals(questions.getAnswer())) {
                 Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_SHORT).show();
                 activityMainMcqsBinding.tvMcqsOption4.setBackgroundColor(Color.GREEN);
                 correct = correct + 1;
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        updateQuestions();
-                    }
-                }, 1500);
-
 
             } else {
                 Toast.makeText(getApplicationContext(), "Incorrect", Toast.LENGTH_SHORT).show();
@@ -254,18 +187,26 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
                 } else if (activityMainMcqsBinding.tvMcqsOption1.getText().toString().equals(questions.getAnswer())) {
                     activityMainMcqsBinding.tvMcqsOption1.setBackgroundColor(Color.GREEN);
                 }
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        updateQuestions();
-                    }
-                }, 1500);
-
 
             }
 
+        } else if (v.getId() == R.id.btn_next){
+            updateQuestions();
+            questionStyle();
+
+        } else if (v.getId() == R.id.btn_previous){
+
+            questionStyle();
+
         }
+
+    }
+
+    public void questionStyle(){
+        activityMainMcqsBinding.tvMcqsOption1.setBackgroundColor(Color.parseColor("#6200EE"));
+        activityMainMcqsBinding.tvMcqsOption2.setBackgroundColor(Color.parseColor("#6200EE"));
+        activityMainMcqsBinding.tvMcqsOption3.setBackgroundColor(Color.parseColor("#6200EE"));
+        activityMainMcqsBinding.tvMcqsOption4.setBackgroundColor(Color.parseColor("#6200EE"));
 
     }
 
@@ -287,10 +228,7 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
                 intent.putExtra("correct",String.valueOf(correct));
                 intent.putExtra("incorrect",String.valueOf(wrong));
                 startActivity(intent);
-
             }
         }.start();
     }
-
-
 }

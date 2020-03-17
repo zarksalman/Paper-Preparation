@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.paperprepationapp.databinding.ActivityMidfinalBinding;
+import com.google.firebase.database.DatabaseReference;
 
 import static com.example.paperprepationapp.AppConstants.FINALTERM;
 import static com.example.paperprepationapp.AppConstants.MIDTERM;
@@ -17,6 +18,7 @@ public class MidFinalActivity extends Activity implements View.OnClickListener {
 
     private ActivityMidfinalBinding activityMidfinalBinding;
     private String subjectCode;
+    DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
