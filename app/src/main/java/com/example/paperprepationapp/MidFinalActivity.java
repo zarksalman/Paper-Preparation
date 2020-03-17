@@ -1,21 +1,14 @@
 package com.example.paperprepationapp;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.paperprepationapp.databinding.ActivityMidfinalBinding;
 
-import static com.example.paperprepationapp.AppConstants.ENGLISH;
 import static com.example.paperprepationapp.AppConstants.FINALTERM;
-import static com.example.paperprepationapp.AppConstants.MATTHEMATICS;
 import static com.example.paperprepationapp.AppConstants.MIDTERM;
 import static com.example.paperprepationapp.AppConstants.SUBJECT_CODE;
 import static com.example.paperprepationapp.AppConstants.TERM_CODE;
@@ -24,9 +17,6 @@ public class MidFinalActivity extends Activity implements View.OnClickListener {
 
     private ActivityMidfinalBinding activityMidfinalBinding;
     private String subjectCode;
-    private String termCode;
-    private String term;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +26,6 @@ public class MidFinalActivity extends Activity implements View.OnClickListener {
 
         activityMidfinalBinding.tvTittle.setText(subjectCode);
         setListner();
-
-
     }
 
     private void setListner() {

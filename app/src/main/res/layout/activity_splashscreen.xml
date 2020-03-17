@@ -22,7 +22,7 @@
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:textSize="30sp"
-            android:text="Welcome to"/>
+            android:text="@string/welcome_to"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:textSize="30sp"
-            android:text="Paper Prepation App"/>
+            android:text="@string/paper_preparation_app"/>
 
     </LinearLayout>
 

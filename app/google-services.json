@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "854704876983",
+    "firebase_url": "https://paper-preparation-app.firebaseio.com",
+    "project_id": "paper-preparation-app",
+    "storage_bucket": "paper-preparation-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854704876983:android:8385ec35b9c6f055404c32",
+        "android_client_info": {
+          "package_name": "com.example.paperprepationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854704876983-ap79us64r0svh9ahler0k03ko4ef1og7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7f1GKD_95RVZdaXvd-0X84uFqSztLcTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854704876983-ap79us64r0svh9ahler0k03ko4ef1og7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

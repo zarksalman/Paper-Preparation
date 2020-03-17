@@ -4,7 +4,7 @@ public class AppConstants {
 
    public static final String  SUBJECT_CODE = "subject_code";
    public static final String  ENGLISH = "English";
-   public static final String  MATTHEMATICS = "Mathematics";
+   public static final String  MATHEMATICS = "Mathematics";
    public static final String  ACCOUNTING = "Accounting";
    public static final String  CS = "Computer Science";
 

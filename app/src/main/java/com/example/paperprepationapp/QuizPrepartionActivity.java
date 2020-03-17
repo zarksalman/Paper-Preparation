@@ -1,6 +1,5 @@
 package com.example.paperprepationapp;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.app.Activity;
@@ -9,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.paperprepationapp.databinding.ActivityMidfinalBinding;
 import com.example.paperprepationapp.databinding.ActivityQuizPrepartionBinding;
 
 import static com.example.paperprepationapp.AppConstants.SUBJECT_CODE;
@@ -31,7 +29,6 @@ public class QuizPrepartionActivity extends Activity implements View.OnClickList
 
         activityQuizPrepartionBinding.tvMidTittle.setText(subjectCode);
         activityQuizPrepartionBinding.tvSubMidTittle.setText(termCode);
-
     }
 
     private void setListner() {
@@ -42,12 +39,16 @@ public class QuizPrepartionActivity extends Activity implements View.OnClickList
     @Override
     public void onClick(View v) {
 
+        Intent intent = new Intent(this, PreparationMcqActivity.class);
+
         if (v.getId() == R.id.cv_prepartion) {
-            Toast.makeText(this, "prepartion ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Prepartion ", Toast.LENGTH_SHORT).show();
 
         } else if (v.getId() == R.id.cv_quiz) {
-            Toast.makeText(this, "quiz", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Quiz", Toast.LENGTH_SHORT).show();
 
         }
+        startActivity(intent);
+
     }
 }

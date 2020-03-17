@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuizPrepartionActivity"
-
+        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".PreparationMcqActivity" />
+        <activity
+            android:name=".QuizPrepartionActivity"
             android:parentActivityName=".MidFinalActivity" />
         <activity android:name=".AllSubjects" />
         <activity

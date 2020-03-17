@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Paper Prepation App</string>
+    <string name="app_name">Paper Preparation App</string>
 
     <string name="mid_term_papers">Mid Term Papers</string>
     <string name="final_term_papers">Final Term Papers</string>
@@ -48,4 +48,12 @@
     <string name="computer_science">Computer Science</string>
     <string name="prepartion">Prepartion</string>
     <string name="quiz">Quiz</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="paper_prepation_app">Paper Prepation App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="paper_preparation_app">Ppaper Preparation App</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
 </resources>
