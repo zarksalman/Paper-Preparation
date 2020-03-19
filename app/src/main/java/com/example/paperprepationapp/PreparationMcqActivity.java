@@ -84,7 +84,7 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
                     activityMainMcqsBinding.tvMcqsOption2.setText(questions.getOption2());
                     activityMainMcqsBinding.tvMcqsOption3.setText(questions.getOption3());
                     activityMainMcqsBinding.tvMcqsOption4.setText(questions.getOption4());
-                    setListener();
+
                 }
 
                 @Override
@@ -123,6 +123,7 @@ public class PreparationMcqActivity extends AppCompatActivity implements View.On
             }
 
         } else if (v.getId() == R.id.tv_mcqs_option_2) {
+
             if (activityMainMcqsBinding.tvMcqsOption2.getText().toString().equals(questions.getAnswer())) {
                 Toast.makeText(getApplicationContext(), "Correct answer", Toast.LENGTH_SHORT).show();
                 activityMainMcqsBinding.tvMcqsOption2.setBackgroundColor(Color.GREEN);

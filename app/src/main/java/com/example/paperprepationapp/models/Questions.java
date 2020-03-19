@@ -1,17 +1,13 @@
 package com.example.paperprepationapp.models;
 
 
-
-public class Questions  {
+public class Questions {
     private String question;
     private String option1;
     private String option2;
     private String option3;
     private String option4;
     private String answer;
-
-    public Questions(){}
-
 
     public Questions(String question, String option1, String option2, String option3, String option4, String answer) {
         this.question = question;
@@ -22,6 +18,8 @@ public class Questions  {
         this.answer = answer;
     }
 
+    public Questions() {
+    }
 
     public String getQuestion() {
         return question;
